@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Shubham kumar's Webpage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: whitesmoke;
+      color: black;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      display: grid;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1 {
+      color: black;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      font-size: 36px;
+    }
+    h2 {
+      color: #2980b9;
+      font-size: 28px;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style-type: none;
+    }
+    ul li {
+      background-color: white;
+      padding: 12px 16px;
+      border-left: 4px solid #3498db;
+      font-size: 18px;
+      flex: 1 1 150px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid rgb(195, 193, 193);
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      border-radius: 5px;
+      border: 2px solid #3498db;
+      max-width: 600px;
+    }
+    label {
+      font-weight: 600;
+    }
+    input[type="text"],input[type="email"] {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 150px;
+    }
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+    .media-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    img, video {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    @media (min-width: 600px) {
+      body {
+        font-size: 18px;
+      }
+      .media-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 900px) {
+      body {
+        font-size: 20px;
+      }
+      .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+    @media (max-width: 500px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        background-color: #3498db;
+        color: white;
+      }
+      td {
+        border-top: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Shubham kumar's Webpage</h1>
+    <p>This is a paragraph introducing HTML basics.</p>
+    <h2>HTML List</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>React.Js</li>
+      <li>Mongo DB</li>
+      <li>Spring Boot</li>
+    </ul>
+    <h2>Table</h2>
+    <table>
+      <tr>
+        <th>Sl.No.</th>
+        <th>Duration</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Web Development</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Full Stack</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Java Backend Developer</td>
+      </tr>
+    </table>
+    <h2>Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <input type="submit" value="Submit">
+    </form>
+    <h2>Multimedia</h2>
+    <div class="media-section">
+      <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-semantic-tags/semantic-tags.png"
+        alt="Semantic tags image">
+      <video controls>
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</body>
+</html>
